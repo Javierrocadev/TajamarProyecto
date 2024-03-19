@@ -1,0 +1,33 @@
+﻿@model TajamarProyecto.Models.EntrevistaAlumno
+
+<h2>Detalles de la Entrevista</h2>
+
+@if (Model != null)
+{
+    <table class="table">
+        <tr>
+            <th>Identificador de Entrevista</th>
+            <td>@Model.IdEntrevista</td>
+        </tr>
+        <tr>
+            <th>ID del Alumno</th>
+            <td>@Model.IdAlumno</td>
+        </tr>
+        <tr>
+            <th>ID de la Empresa</th>
+            <td>@Model.IdEmpresa</td>
+        </tr>
+        <tr>
+            <th>Fecha de Entrevista</th>
+            <td>@Model.FechaEntrevista</td>
+        </tr>
+        <tr>
+            <th>Estado</th>
+            <td>@Model.Estado</td>
+        </tr>
+    </table>
+}
+else
+{
+    <p>No se encontró ninguna entrevista para este usuario.</p>
+}
